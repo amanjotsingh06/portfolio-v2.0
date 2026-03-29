@@ -22,7 +22,7 @@
 ## ✨ Features
 
 - **Cinematic Dark Theme** — Deep navy palette with electric blue, cyan, and purple accents
-- **Animated Hero** — Floating 3D avatar with pulsing glow, typewriter text effect, and shimmer tagline
+- **Animated Hero** — Floating 2D avatar with pulsing glow, typewriter text effect, and shimmer tagline
 - **Interactive Skills Orbit** — Tech stack displayed in rotating orbital rings
 - **Project Showcase** — Glass-morphism cards with live demo & GitHub links
 - **Contact Form** — EmailJS-powered form that sends messages directly to your inbox
