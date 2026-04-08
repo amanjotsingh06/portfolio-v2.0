@@ -4,6 +4,21 @@ import { FiGithub, FiExternalLink, FiLinkedin, FiMail } from 'react-icons/fi'
 
 const projects = [
   {
+    title: 'AI Resume Coach',
+    description: 'An intelligent platform providing real-time AI resume analysis and feedback utilizing Ollama, featuring custom loaders and a fully responsive design.',
+    tech: [
+      { name: 'MongoDB', color: 'text-emerald-400 border-emerald-400/40' },
+      { name: 'Express.js', color: 'text-slate-300 border-slate-500/40' },
+      { name: 'ReactJs', color: 'text-fuchsia-400 border-fuchsia-400/40' },
+      { name: 'Node.js', color: 'text-green-400 border-green-400/40' },
+      { name: 'Ollama AI', color: 'text-cyan-400 border-cyan-400/40' },
+    ],
+    gradient: 'from-fuchsia to-cyan',
+    github: 'https://github.com/amanjotsingh06/ai-resume-coach',
+    demo: '#',
+    image: 'Ai-Resume-Coach.png',
+  },
+  {
     title: 'Hand Cricket Game',
     description: 'Game logic with toss animations, real-time scoreboard and a dynamic day/night mode toggle.',
     tech: [
