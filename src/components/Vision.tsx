@@ -22,7 +22,7 @@ export default function Vision() {
           className="text-center mb-10 sm:mb-14"
         >
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold">
-            <span className="text-cyan-400">Future Vision</span>
+            <span className="text-purple-light">Future Vision</span>
           </h2>
         </motion.div>
 
@@ -34,10 +34,10 @@ export default function Vision() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="max-w-xl mx-auto"
         >
-          <div className="glass rounded-xl p-8 sm:p-10 border border-cyan-400/20 text-center transition-all duration-500 hover:border-cyan-400/40 hover:shadow-[0_0_30px_rgba(6,182,212,0.1)]">
+          <div className="glass rounded-xl p-8 sm:p-10 border border-purple/20 text-center transition-all duration-500 hover:border-purple/40 hover:shadow-[0_0_30px_rgba(124,58,237,0.12)]">
             <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-light italic">
               "My goal is to become a top{' '}
-              <span className="text-white font-semibold underline decoration-cyan-400/50 underline-offset-2 not-italic">
+              <span className="text-white font-semibold underline decoration-purple/50 underline-offset-2 not-italic">
                 AI powered full stack developer
               </span>
               , bridging the gap between intelligent algorithms and seamless user experiences."

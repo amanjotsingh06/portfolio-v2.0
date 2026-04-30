@@ -77,14 +77,14 @@ export default function Navbar() {
                   onClick={() => handleClick(href)}
                   className={`relative px-4 py-2 text-sm font-medium transition-colors duration-300 rounded-lg ${
                     active === label
-                      ? 'text-electric-light'
+                      ? 'text-purple-light'
                       : 'text-slate-400 hover:text-white'
                   }`}
                 >
                   {active === label && (
                     <motion.span
                       layoutId="navIndicator"
-                      className="absolute inset-0 rounded-lg bg-electric/10 border border-electric/20"
+                      className="absolute inset-0 rounded-lg bg-purple/10 border border-purple/25"
                       transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }}
                     />
                   )}
@@ -102,15 +102,15 @@ export default function Navbar() {
           >
             <motion.span
               animate={mobileOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }}
-              className="block w-6 h-0.5 bg-electric-light"
+              className="block w-6 h-0.5 bg-purple-light"
             />
             <motion.span
               animate={mobileOpen ? { opacity: 0 } : { opacity: 1 }}
-              className="block w-6 h-0.5 bg-electric-light"
+              className="block w-6 h-0.5 bg-purple-light"
             />
             <motion.span
               animate={mobileOpen ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }}
-              className="block w-6 h-0.5 bg-electric-light"
+              className="block w-6 h-0.5 bg-purple-light"
             />
           </button>
         </div>
@@ -137,7 +137,7 @@ export default function Navbar() {
                     onClick={() => handleClick(href)}
                     className={`w-full text-left px-4 py-3 text-lg font-medium rounded-lg transition-colors ${
                       active === label
-                        ? 'text-electric-light bg-electric/10'
+                        ? 'text-purple-light bg-purple/10'
                         : 'text-slate-400 hover:text-white hover:bg-white/5'
                     }`}
                   >

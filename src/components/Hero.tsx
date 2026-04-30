@@ -13,11 +13,11 @@ export default function Hero({ isLoaded }: HeroProps) {
       id="hero"
       className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden px-4 sm:px-6"
     >
-      {/* Radial glow background */}
+      {/* Radial glow background – galaxy nebula */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-electric/5 blur-[120px]" />
-        <div className="absolute top-1/3 right-1/4 w-[400px] h-[400px] rounded-full bg-purple/5 blur-[100px]" />
-        <div className="absolute bottom-1/4 left-1/3 w-[300px] h-[300px] rounded-full bg-cyan/5 blur-[80px]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-purple/6 blur-[140px]" />
+        <div className="absolute top-1/3 right-1/4 w-[400px] h-[400px] rounded-full bg-cyan/5 blur-[110px]" />
+        <div className="absolute bottom-1/4 left-1/3 w-[300px] h-[300px] rounded-full bg-purple/4 blur-[90px]" />
       </div>
 
       <div className="relative z-10 flex flex-col items-center text-center max-w-3xl mx-auto w-full">
@@ -29,13 +29,13 @@ export default function Hero({ isLoaded }: HeroProps) {
           className="mb-8"
         >
           <div className="relative group" data-purpose="avatar-container">
-            {/* Glow behind avatar */}
-            <div className="absolute inset-0 bg-[#38bdf8]/20 rounded-full blur-3xl group-hover:bg-[#38bdf8]/30 transition-all duration-700 scale-75 avatar-glow-pulse" />
+            {/* Glow behind avatar – nebula violet */}
+            <div className="absolute inset-0 bg-[#7c3aed]/25 rounded-full blur-3xl group-hover:bg-[#7c3aed]/40 transition-all duration-700 scale-75 avatar-glow-pulse" />
             <img
               src="/avatar.png"
               alt="Amanjot Singh 3D Avatar"
               data-purpose="hero-avatar"
-              className="w-48 h-48 md:w-64 md:h-64 object-contain avatar-float drop-shadow-[0_0_15px_rgba(56,189,248,0.3)]"
+              className="w-48 h-48 md:w-64 md:h-64 object-contain avatar-float drop-shadow-[0_0_20px_rgba(124,58,237,0.35)]"
             />
           </div>
         </motion.div>
@@ -109,10 +109,10 @@ export default function Hero({ isLoaded }: HeroProps) {
           className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6"
         >
           <motion.button
-            whileHover={{ scale: 1.05, borderColor: 'rgba(96,165,250,0.5)' }}
+            whileHover={{ scale: 1.05, borderColor: 'rgba(167,139,250,0.5)' }}
             whileTap={{ scale: 0.95 }}
             onClick={() => document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' })}
-            className="px-8 py-3.5 rounded-full font-semibold text-sm text-white border border-slate-600 hover:border-electric/50 hover:bg-electric/5 transition-all duration-300"
+            className="px-8 py-3.5 rounded-full font-semibold text-sm text-white border border-slate-700 hover:border-purple-400/50 hover:bg-purple-900/5 transition-all duration-300"
           >
             <span className="flex items-center gap-2">
               View My Projects

@@ -191,9 +191,9 @@ export default function Skills() {
 
   return (
     <section id="skills" className="relative overflow-hidden px-4 py-24 sm:px-8 sm:py-32 lg:px-6">
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-64 bg-linear-to-b from-electric/6 via-electric/3 to-transparent" />
-      <div className="pointer-events-none absolute left-1/2 top-1/2 h-96 w-96 -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan/6 blur-[140px]" />
-      <div className="pointer-events-none absolute bottom-0 left-0 h-112 w-md rounded-full bg-purple/8 blur-[170px]" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-64 bg-linear-to-b from-purple/6 via-purple/3 to-transparent" />
+      <div className="pointer-events-none absolute left-1/2 top-1/2 h-96 w-96 -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan/5 blur-[140px]" />
+      <div className="pointer-events-none absolute bottom-0 left-0 h-112 w-md rounded-full bg-purple/7 blur-[170px]" />
 
       <div className="mx-auto max-w-5xl">
         <motion.div
@@ -206,7 +206,7 @@ export default function Skills() {
           <h2 className="mb-3 font-heading text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
             Technical Expertise
           </h2>
-          <div className="mx-auto mb-4 h-1 w-12 rounded-full bg-electric" />
+          <div className="mx-auto mb-4 h-1 w-12 rounded-full bg-purple" />
           <p className="mx-auto max-w-2xl text-sm leading-relaxed text-slate-400 sm:text-base">
             A focused view of the languages, frameworks, and tools I use to build modern web products with clean
             interfaces and AI-ready workflows.
@@ -243,7 +243,7 @@ export default function Skills() {
           initial={{ opacity: 0, y: 24, scale: 0.98 }}
           animate={contentInView ? { opacity: 1, y: 0, scale: 1 } : {}}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="glass-strong relative overflow-hidden rounded-4xl border border-white/10 px-4 py-8 shadow-[0_0_80px_rgba(15,23,42,0.4)] sm:px-8 sm:py-10"
+          className="glass-strong relative rounded-4xl border border-white/10 px-4 py-8 shadow-[0_0_80px_rgba(15,23,42,0.4)] sm:px-8 sm:py-10"
         >
           <div
             className="pointer-events-none absolute inset-0 opacity-90"
@@ -296,7 +296,7 @@ export default function Skills() {
           <div className="relative mx-auto aspect-square w-full max-w-2xl">
             <div className="pointer-events-none absolute left-1/2 top-1/2 h-[88%] w-px -translate-x-1/2 -translate-y-1/2 bg-linear-to-b from-transparent via-white/12 to-transparent" />
             <div className="pointer-events-none absolute left-1/2 top-1/2 h-px w-[88%] -translate-x-1/2 -translate-y-1/2 bg-linear-to-r from-transparent via-white/12 to-transparent" />
-            <div className="pointer-events-none absolute left-1/2 top-1/2 h-[30%] w-[30%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-electric/12 blur-3xl" />
+            <div className="pointer-events-none absolute left-1/2 top-1/2 h-[30%] w-[30%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-purple/10 blur-3xl" />
 
             {orbitGroups.map((group, index) => (
               <OrbitTrack

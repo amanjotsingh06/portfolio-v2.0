@@ -56,9 +56,9 @@ export default function CustomCursor() {
           className="w-full h-full rounded-full"
           style={{
             background: isPointer
-              ? 'radial-gradient(circle, rgba(96,165,250,0.4), rgba(139,92,246,0.2))'
-              : 'white',
-            border: isPointer ? '1.5px solid rgba(96,165,250,0.6)' : 'none',
+              ? 'radial-gradient(circle, rgba(167,139,250,0.45), rgba(124,58,237,0.25))'
+              : 'rgba(240,240,255,0.95)',
+            border: isPointer ? '1.5px solid rgba(167,139,250,0.65)' : 'none',
           }}
         />
       </motion.div>
@@ -71,7 +71,7 @@ export default function CustomCursor() {
         }}
         transition={{ type: 'spring', damping: 20, stiffness: 200, mass: 0.8 }}
       >
-        <div className="w-12 h-12 rounded-full bg-electric blur-md" />
+        <div className="w-12 h-12 rounded-full bg-purple blur-md" />
       </motion.div>
     </>
   )

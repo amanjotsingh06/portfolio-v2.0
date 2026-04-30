@@ -5,14 +5,14 @@ import * as THREE from 'three'
 
 function Particles() {
   const meshRef = useRef<THREE.Points>(null!)
-  const count = 600
+  const count = 1200
 
   const positions = useMemo(() => {
     const pos = new Float32Array(count * 3)
     for (let i = 0; i < count; i++) {
-      pos[i * 3] = (Math.random() - 0.5) * 40
-      pos[i * 3 + 1] = (Math.random() - 0.5) * 40
-      pos[i * 3 + 2] = (Math.random() - 0.5) * 20
+      pos[i * 3] = (Math.random() - 0.5) * 60
+      pos[i * 3 + 1] = (Math.random() - 0.5) * 60
+      pos[i * 3 + 2] = (Math.random() - 0.5) * 30
     }
     return pos
   }, [])
@@ -32,10 +32,10 @@ function Particles() {
   return (
     <points ref={meshRef} geometry={geometry}>
       <pointsMaterial
-        size={0.04}
-        color="#60a5fa"
+        size={0.025}
+        color="#d4d8f0"
         transparent
-        opacity={0.6}
+        opacity={0.75}
         sizeAttenuation
         blending={THREE.AdditiveBlending}
         depthWrite={false}

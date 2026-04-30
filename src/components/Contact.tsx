@@ -53,7 +53,7 @@ export default function Contact() {
     <>
       <section id="contact" className="relative py-24 sm:py-32 px-4 sm:px-8 lg:px-6 overflow-hidden">
         {/* Gradient divider at top */}
-        <div className="absolute top-0 left-0 right-0 h-0.5 bg-linear-to-r from-cyan-400 via-electric to-fuchsia-500" />
+        <div className="absolute top-0 left-0 right-0 h-0.5 bg-linear-to-r from-purple-light via-electric-light to-cyan-light" />
 
         {/* Background glow */}
         <div className="absolute inset-0 pointer-events-none">
@@ -71,7 +71,7 @@ export default function Contact() {
           >
             <h2 className="font-heading text-2xl sm:text-3xl lg:text-4xl font-bold text-white leading-snug">
               Let's build something{' '}
-              <span className="bg-linear-to-r from-cyan-400 to-electric bg-clip-text text-transparent">amazing</span>{' '}
+              <span className="bg-linear-to-r from-purple-light to-cyan-light bg-clip-text text-transparent">amazing</span>{' '}
               together.
             </h2>
             <p className="text-sm sm:text-base text-slate-400 mt-4 max-w-lg mx-auto leading-relaxed">
@@ -96,7 +96,7 @@ export default function Contact() {
               >
                 {/* Name */}
                 <div>
-                  <label className="block text-xs font-bold tracking-[0.2em] uppercase text-cyan-400 mb-2">
+                  <label className="block text-xs font-bold tracking-[0.2em] uppercase text-purple-light mb-2">
                     Name
                   </label>
                   <input
@@ -104,13 +104,13 @@ export default function Contact() {
                     name="from_name"
                     required
                     placeholder="Enter your name"
-                    className="w-full bg-navy-950/80 border border-slate-600/50 rounded-lg px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400/60 focus:ring-1 focus:ring-cyan-400/30 transition-all duration-300"
+                    className="w-full bg-navy-950/80 border border-slate-700/50 rounded-lg px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-purple-light/60 focus:ring-1 focus:ring-purple/30 transition-all duration-300"
                   />
                 </div>
 
                 {/* Email */}
                 <div>
-                  <label className="block text-xs font-bold tracking-[0.2em] uppercase text-cyan-400 mb-2">
+                  <label className="block text-xs font-bold tracking-[0.2em] uppercase text-purple-light mb-2">
                     Email
                   </label>
                   <input
@@ -118,13 +118,13 @@ export default function Contact() {
                     name="from_email"
                     required
                     placeholder="your@email.com"
-                    className="w-full bg-navy-950/80 border border-slate-600/50 rounded-lg px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400/60 focus:ring-1 focus:ring-cyan-400/30 transition-all duration-300"
+                    className="w-full bg-navy-950/80 border border-slate-700/50 rounded-lg px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-purple-light/60 focus:ring-1 focus:ring-purple/30 transition-all duration-300"
                   />
                 </div>
 
                 {/* Message */}
                 <div>
-                  <label className="block text-xs font-bold tracking-[0.2em] uppercase text-cyan-400 mb-2">
+                  <label className="block text-xs font-bold tracking-[0.2em] uppercase text-purple-light mb-2">
                     Message
                   </label>
                   <textarea
@@ -132,7 +132,7 @@ export default function Contact() {
                     required
                     rows={5}
                     placeholder="What's on your mind?"
-                    className="w-full bg-navy-950/80 border border-slate-600/50 rounded-lg px-4 py-3 text-sm text-white placeholder-slate-500 resize-none focus:outline-none focus:border-cyan-400/60 focus:ring-1 focus:ring-cyan-400/30 transition-all duration-300"
+                    className="w-full bg-navy-950/80 border border-slate-700/50 rounded-lg px-4 py-3 text-sm text-white placeholder-slate-500 resize-none focus:outline-none focus:border-purple-light/60 focus:ring-1 focus:ring-purple/30 transition-all duration-300"
                   />
                 </div>
 
@@ -140,10 +140,10 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={sending}
-                  className="w-full relative group py-3.5 sm:py-4 rounded-lg font-bold text-sm tracking-[0.2em] uppercase text-cyan-400 border-2 border-cyan-400/40 bg-transparent hover:bg-cyan-400/5 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed overflow-hidden"
+                  className="w-full relative group py-3.5 sm:py-4 rounded-lg font-bold text-sm tracking-[0.2em] uppercase text-purple-light border-2 border-purple/40 bg-transparent hover:bg-purple/5 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed overflow-hidden"
                 >
                   {/* Glow effect on hover */}
-                  <span className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 shadow-[0_0_20px_rgba(34,211,238,0.3),inset_0_0_20px_rgba(34,211,238,0.05)]" />
+                  <span className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 shadow-[0_0_20px_rgba(124,58,237,0.3),inset_0_0_20px_rgba(124,58,237,0.05)]" />
                   <span className="relative flex items-center justify-center gap-2">
                     {sending ? 'Sending...' : 'Submit'}
                     {!sending && <FiArrowRight className="w-4 h-4" />}
@@ -186,7 +186,7 @@ export default function Contact() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 sm:w-14 sm:h-14 rounded-full border border-slate-600 flex items-center justify-center text-slate-400 hover:text-white hover:border-cyan-400/50 hover:bg-cyan-400/10 hover:shadow-[0_0_15px_rgba(34,211,238,0.15)] hover:scale-110 transition-all duration-300"
+                  className="w-12 h-12 sm:w-14 sm:h-14 rounded-full border border-slate-700 flex items-center justify-center text-slate-400 hover:text-white hover:border-purple/50 hover:bg-purple/10 hover:shadow-[0_0_15px_rgba(124,58,237,0.2)] hover:scale-110 transition-all duration-300"
                   aria-label={social.label}
                 >
                   <social.icon className="w-5 h-5 sm:w-6 sm:h-6" />
@@ -201,7 +201,7 @@ export default function Contact() {
       <footer className="relative px-4 sm:px-8 lg:px-6 py-6 border-t border-slate-800/50">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-3 h-3 rounded-sm bg-electric" />
+            <div className="w-3 h-3 rounded-sm bg-purple" />
             <span className="text-xs text-slate-500 font-mono">© Amanjot Singh</span>
           </div>
           <div className="flex items-center gap-4 sm:gap-6">

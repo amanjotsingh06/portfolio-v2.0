@@ -15,7 +15,6 @@ const projects = [
     ],
     gradient: 'from-fuchsia to-cyan',
     github: 'https://github.com/amanjotsingh06/ai-resume-coach',
-    demo: '#',
     image: 'Ai-Resume-Coach.png',
   },
   {
@@ -45,7 +44,7 @@ function ProjectCard({ project, index }: { project: (typeof projects)[0]; index:
       transition={{ duration: 0.7, delay: index * 0.15, ease: [0.25, 0.46, 0.45, 0.94] }}
       className="group relative shrink-0 w-full max-w-sm mx-auto sm:max-w-none"
     >
-      <div className="relative glass rounded-2xl overflow-hidden h-full flex flex-col border border-slate-700/50 hover:border-electric/30 transition-all duration-500">
+      <div className="relative glass rounded-2xl overflow-hidden h-full flex flex-col border border-slate-800/50 hover:border-purple/30 transition-all duration-500">
         {/* Project image */}
         <div className="relative h-44 sm:h-48 bg-navy-800 overflow-hidden">
           <img
@@ -90,7 +89,7 @@ function ProjectCard({ project, index }: { project: (typeof projects)[0]; index:
               href={project.demo}
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
-              className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg text-xs font-semibold text-navy-950 bg-cyan-400 hover:bg-cyan-300 transition-all"
+              className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg text-xs font-semibold text-white bg-purple hover:bg-purple-light transition-all"
             >
               <FiExternalLink className="w-3.5 h-3.5" />
               Live Demo
@@ -128,7 +127,7 @@ export default function Projects() {
           className="mb-10 text-center sm:mb-14 sm:text-left"
         >
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold uppercase mb-3">
-            <span className="bg-linear-to-r from-cyan-400 via-electric to-fuchsia-500 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-electric-light via-purple-light to-cyan-light bg-clip-text text-transparent">
               Featured Projects
             </span>
           </h2>

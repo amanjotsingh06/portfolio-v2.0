@@ -26,8 +26,8 @@ const stories = [
     icon: FiLayers,
     text: 'Then I moved into React, mastering component-based architecture and state management for complex apps.',
     side: 'left' as const,
-    color: 'bg-electric',
-    labelColor: 'text-electric-light',
+    color: 'bg-purple-500',
+    labelColor: 'text-purple-400',
     borderColor: 'border-slate-700',
   },
   {
@@ -151,7 +151,7 @@ export default function Story() {
         {/* Timeline */}
         <div className="relative">
           {/* Vertical line */}
-          <div className="absolute left-4 md:left-1/2 md:-translate-x-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-electric/40 via-purple/30 to-transparent" />
+          <div className="absolute left-4 md:left-1/2 md:-translate-x-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-purple/50 via-cyan/30 to-transparent" />
 
           {stories.map((story, i) => (
             <TimelineCard key={i} story={story} index={i} />
