@@ -28,7 +28,7 @@ const projects = [
     ],
     gradient: 'from-cyan to-electric',
     github: 'https://github.com/amanjotsingh06/handcricket',
-    demo: 'https://handcricket-five.vercel.app/',
+    demo: 'https://hand-cricket06.vercel.app/',
     image: 'handcricket.png',
   },
 ]
