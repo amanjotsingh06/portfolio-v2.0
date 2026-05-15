@@ -16,7 +16,7 @@ const projects = [
     gradient: 'from-purple to-cyan',
     github: 'https://github.com/amanjotsingh06/watchparty',
     demo: 'https://watchparty06.vercel.app/',
-    image: '/Watchparty.png',
+    image: 'Watchparty.png',
   },
   {
     title: 'AI Resume Coach',
@@ -30,7 +30,7 @@ const projects = [
     ],
     gradient: 'from-fuchsia to-cyan',
     github: 'https://github.com/amanjotsingh06/ai-resume-coach',
-    image: '/Ai-Resume-Coach.png',
+    image: 'Ai-Resume-Coach.png',
   },
   {
     title: 'Hand Cricket Game',
@@ -43,7 +43,7 @@ const projects = [
     gradient: 'from-cyan to-electric',
     github: 'https://github.com/amanjotsingh06/handcricket',
     demo: 'https://hand-cricket06.vercel.app/',
-    image: '/handcricket.png',
+    image: 'handcricket.png',
   },
 ]
 
@@ -100,23 +100,17 @@ function ProjectCard({ project, index }: { project: (typeof projects)[0]; index:
 
           {/* Buttons */}
           <div className="flex gap-2">
-            {project.demo && (
-              <motion.a
-                href={project.demo}
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.97 }}
-                className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg text-xs font-semibold text-white bg-purple hover:bg-purple-light transition-all"
-              >
-                <FiExternalLink className="w-3.5 h-3.5" />
-                Live Demo
-              </motion.a>
-            )}
+            <motion.a
+              href={project.demo}
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.97 }}
+              className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg text-xs font-semibold text-white bg-purple hover:bg-purple-light transition-all"
+            >
+              <FiExternalLink className="w-3.5 h-3.5" />
+              Live Demo
+            </motion.a>
             <motion.a
               href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
               className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg text-xs font-semibold text-white border border-slate-600 hover:border-slate-400 transition-all"
