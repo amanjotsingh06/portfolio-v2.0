@@ -4,6 +4,20 @@ import { FiGithub, FiExternalLink, FiLinkedin, FiMail } from 'react-icons/fi'
 
 const projects = [
   {
+    title: 'WatchParty',
+    description: 'A full-stack collaborative platform for synchronized YouTube video playback across multiple clients in real-time, utilizing custom React hooks and Socket.IO.',
+    tech: [
+      { name: 'Next.js', color: 'text-cyan-400 border-cyan-400/40' },
+      { name: 'React', color: 'text-fuchsia-400 border-fuchsia-400/40' },
+      { name: 'Socket.IO', color: 'text-slate-300 border-slate-500/40' },
+      { name: 'Node.js', color: 'text-green-400 border-green-400/40' },
+      { name: 'TypeScript', color: 'text-blue-400 border-blue-400/40' },
+    ],
+    gradient: 'from-purple to-cyan',
+    github: 'https://github.com/amanjotsingh06/watchparty',
+    image: 'watchparty.png',
+  },
+  {
     title: 'AI Resume Coach',
     description: 'An intelligent platform providing real-time AI resume analysis and feedback utilizing Ollama, featuring custom loaders and a fully responsive design.',
     tech: [
